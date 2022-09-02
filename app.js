@@ -171,6 +171,27 @@
 // }
 
 18. // C Program to Check Whether a Number is Prime or not
+// let num = 12;
+// let isPrime = true;
+
+// if(num === 1){
+//     console.log(`${num} is neither prime or composite number`);
+// } else if(num > 1){
+//     for(let i = 2; i < num; i++){
+//         if(num % i == 0){
+//             isPrime = false;
+//             break;
+//         }
+//     }
+
+//     if(isPrime == true){
+//         console.log(`${num} is Prime number`);
+//     } else {
+//         console.log(`${num} is not Prime number`);
+//     }
+// } else {
+//     console.log(`The num is not prime number`);
+// }
 
 
 19. // C Program to Display Prime Numbers Between Two Intervals
@@ -512,6 +533,27 @@
 // }
 
 13. // JavaScript Program to Check Prime Number
+// let num = 12;
+// let isPrime = true;
+
+// if(num === 1){
+//     console.log(`${num} is neither prime or composite number`);
+// } else if(num > 1){
+//     for(let i = 2; i < num; i++){
+//         if(num % i == 0){
+//             isPrime = false;
+//             break;
+//         }
+//     }
+
+//     if(isPrime == true){
+//         console.log(`${num} is Prime number`);
+//     } else {
+//         console.log(`${num} is not Prime number`);
+//     }
+// } else {
+//     console.log(`The num is not prime number`);
+// }
 
 14. // JavaScript Program to Print All Prime Numbers in an Interval
 
@@ -596,10 +638,41 @@
 // console.log(sum);
 
 22. // JavaScript Program to Check if the Numbers Have Same Last Digit
+// let num1 = 123;
+// let num2 = 453;
+// let num3 = 783;
+
+// const result1 = num1 % 10;
+// const result2 = num2 % 10;
+// const result3 = num3 % 10;
+
+// if(result1 == result2 && result2 == result3){
+//     console.log(`Numbers has same last digit`);
+// } else {
+//     console.log(`Numbers does not have same last digit`);
+// }
 
 23. // JavaScript Program to Find HCF or GCD
+// let num1 = 60, num2 = 75;
+// let hcf;
+
+// for(let i = 1; i <= num1 && i <= num2; i++){
+//     if(num1 % i == 0 && num2 % i == 0){
+//         hcf = i;
+//     }
+// }
+// console.log(`${hcf}`)
 
 24. // JavaScript Program to Find LCM
+// let num1 = 16, num2 = 20;
+// let min = (num1 > num2) ? num1 : num2;
+// while(true){
+//     if(min % num1 == 0 && min % num2 == 0){
+//         console.log(min);
+//         break;
+//     }
+//     min++;
+// }
 
 25. // JavaScript Program to Find the Factors of a Number
 // let num = 100;
@@ -654,6 +727,9 @@
 31. // JavaScript Program to Convert Decimal to Binary
 
 32. // JavaScript Program to Find ASCII Value of Character
+// let str = 'z';
+// let ascii = str.charCodeAt(0);
+// console.log(ascii);
 
 33. // JavaScript Program to Check Whether a String is Palindrome or Not
 // let str = prompt("Enter a String");
@@ -684,6 +760,23 @@
 // console.log(string);
 
 37. // JavaScript Program to Create Objects in Different Ways
+// const person = { 
+//   name: 'John',
+//   age: 20,
+//   hobbies: ['reading', 'games', 'coding'],
+//   greet: function() {
+//       console.log(`Hello everyone ${this.name}`);
+//   },
+//   score: {
+//       maths: 90,
+//       science: 80
+//   }
+// };
+// console.log(typeof person);
+// console.log(person.name);
+// console.log(person.hobbies[0]);
+// person.greet();
+// console.log(person.score.maths);
 
 38. // JavaScript Program to Check the Number of Occurrences of a Character in the String
 // let str = "abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzhfdhsh";
@@ -712,30 +805,138 @@
 // console.log(count);
 
 41. // JavaScript Program to Remove a Property from an Object
+// const person = {
+//   firstName: 'Mukul',
+//   lastName: 'Gautam',
+//   age: 24,
+//   Blood: 'B+',
+// }
+
+// delete person['age'];
+
+// console.log(person);
 
 42. // JavaScript Program to Check Whether a String Starts and Ends With Certain Characters
 
 43. // JavaScript Program to Check if a Key Exists in an Object
+// const person = {
+//   name: 'mukul',
+//   age: 24,
+// }
+// if(person.hasOwnProperty('lastName')){
+//   console.log(`Key exists in the person object`);
+// } else {
+//   console.log(`Key is not exist in the person object`);
+// }
 
 44. // JavaScript Program to Clone a JS Object
+// const person = {
+//   name: 'mukul',
+//   age: 24,
+// }
+// Spread Operation used to not change name of person object
+// const clone = {...person};
+
+// clone.name = "John";
+
+// console.log(clone);
+// console.log(person);
 
 45. // JavaScript Program to Loop Through an Object
+// const obj = {
+//   firstName:'Mukul',
+//   lastName: 'Gautam',
+//   age: 24
+// }
+// for(let x in obj){
+//   console.log(`${x} - ${obj[x]}`)
+// }
 
 46. // JavaScript Program to Merge Property of Two Objects
+// const person = {
+//   name: 'mukul',
+//   age: 24,
+// }
+// const student = {
+//   gender: 'male',
+// }
+// const newObj = {...person, ...student};
+// console.log(newObj);
 
 47. // JavaScript Program to Count the Number of Keys/Properties in an Object
+// const person = {
+//   name: 'mukul',
+//   age: 24,
+//   gender: 'male',
+//   last: 'gautam',
+// }
+// let count = 0;
+
+// for(let x in person){
+//   count++;
+// }
+// console.log(count);
 
 48. // JavaScript Program to Add Key/Value Pair to an Object
+// const person = {
+//   name: 'mukul',
+//   age: 24,
+//   gender: 'male',
+//   last: 'gautam',
+// }
+// person.height = 5.4;
+// console.log(person);
 
 49. // JavaScript Program to Replace All Occurrences of a String
 
 50. // JavaScript Program to Create Multiline Strings
+// const sentence = 'JSON stands for JavaScript Object Notation.\n It is a format for structuring data.\n This format is used by different web applications to communicate with each other.\n It is the replacement of the XML data exchange format. It is easy to struct the data compare to XML.\n It supports data structures like arrays and objects and the JSON documents that are rapidly executed on the server.';
+// console.log(sentence);
 
 51. // JavaScript Program to Format Numbers as Currency Strings
+// const format = (2500).toLocaleString('en-US', {
+//     style: 'currency',
+//     currency: 'USD'
+// });
+// console.log(format);
+
+// const format = 1223.2323;
+// const result = '$' + format.toFixed(2);
+// console.log(result);
 
 52. // JavaScript Program to Generate Random String
+// const character = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+
+// function generateString(length){
+//     let result = ' ';
+//     const characterLength = character.length;
+//     for(let i = 1; i <= length; i++){
+//         result += character[Math.floor(Math.random() * characterLength)];
+//     }
+//     return result;
+// }
+
+// console.log(generateString(6));
 
 53. // JavaScript Program to Check if a String Starts With Another String
+// const string = 'hello world';
+// const str = 'ha';
+// const len = str.length;
+// let mat;
+
+// for(let i = 0; i < len; i++){
+//     if(string[i] == str[i]){
+//         mat = 1;
+//     } else {
+//         mat = 0;
+//         break;
+//     }
+// }
+// if(mat == 1){
+//     console.log("The String Matched");
+// } else {
+//     console.log("The String is not Matched");
+// }
 
 54. // JavaScript Program to Trim a String
 // let str = '      Mukul       ';
@@ -748,7 +949,21 @@
 // }
 // console.log(string);
 
-55. // JavaScript Program to Convert Objects to Strings
+55. // JavaScript Program to Convert Objects to String
+// const person = {
+//   name: 'mukul',
+//   age: 24,
+// }
+// const result = JSON.stringify(person);
+// console.log(result);
+// console.log(typeof result);
+
+// 2 Method
+// const str1 = String(person);
+// const str2 = String(person['name']);
+// console.log(str1);
+// console.log(str2);
+// console.log(typeof str1);
 
 56. // JavaScript Program to Check Whether a String Contains a Substring
 
@@ -790,10 +1005,64 @@
 // checkLeapYear(year);
  
 63. // JavaScript Program to Format the Date
+// const date = new Date();
+
+// let day = date.getDate();
+
+// let month = date.getMonth() + 1;
+
+// let year = date.getFullYear();
+
+// if(day < 10){
+//     day = '0' + day;
+// }
+
+// if(month < 10){
+//     month = '0' + month;
+// }
+
+// const format1 = `${day}/${month}/${year}`;
+// console.log(format1);
+
+// const format2 = `${day}-${month}-${year}`;
+// console.log(format2);
+
+// const format3 = `${month}/${day}/${year}`;
+// console.log(format3);
+
+// const format4 = `${month}-${day}-${year}`;
+// console.log(format4);
 
 64. // Javascript Program to Display Current Date
+// const date = new Date();
+
+// const n = date.toDateString();
+// const time = date.toLocaleTimeString();
+
+// console.log(n);
+// console.log(time);
 
 65. // JavaScript Program to Compare The Value of Two Dates
+// const d1 = new Date();
+// const d2 = new Date();
+
+// const compare1 = d1 < d2;
+// console.log(compare1);
+
+// const compare2 = d1 > d2;
+// console.log(compare2);
+
+// const compare3 = d1 <= d2;
+// console.log(compare3);
+
+// const compare4 = d1 >= d2;
+// console.log(compare4);
+
+// const compare5 = d1.getTime() === d2.getTime();
+// console.log(compare5);
+
+// const compare6 = d1.getTime() !== d2.getTime();
+// console.log(compare6);
 
 66. // JavaScript Program to Create Countdown Timer
 
@@ -825,24 +1094,110 @@
 // hasValue(arr, 'learn');
  
 69. // JavaScript Program to Insert Item in an Array
+// const arr = [1, 2, 3];
+// function insertItem(num){
+// arr[arr.length] = num; 
+// console.log(arr);
+// }
+// insertItem(8);
+// INCOMPLETE
 
 70. // JavaScript Program to Append an Object to An Array
+// const arr = [1, 2, 3];
+// function insertItem(obj){
+//     arr[arr.length] = obj;
+//     console.log(arr);
+// }
+// insertItem({name:"mukul"});
+//INCOMPLETE
 
 71. // JavaScript Program to Check if An Object is An Array
+// const arr = "[1, 2, 4, 3, 5]";
+
+// if(Array.isArray(arr)) {
+//     console.log("this is a array");
+// } else {
+//     console.log("this is not an array");
+// }
  
 72. // JavaScript Program to Empty an Array
+// const arr = [1, 2, 3, 4];
+// for(arr.length; arr.length != 0; arr.length--){
+// }
+// console.log(arr);
 
 73. // JavaScript Program to Add Element to Start of an Array
+// const arr = [1, 2, 3, 4];
+// let len = arr.length;
+// for(let i = len; i > 0; i--){
+//     arr[i] = arr[i - 1];
+// }
+// arr[0] = 0;
+
+// console.log(arr);
  
 74. // JavaScript Program to Remove Duplicates From Array
+// const arr = [1,4,3 ,1, 3, 4, 3, 4,5, 0];
+// let len = arr.length;
+// let flag=0;
+// const arr1 = [];
+// for(let i = 0; i < len ; i++){
+//     for(let j = 0; j < arr1.length; j++){
+//         if(arr1[j] == arr[i]){
+//             flag = 1;
+//             break;
+//         }
+//     }
+//     if(flag == 0){
+//         arr1.push(arr[i]);
+//     }
+//     flag = 0;
+// }
+// console.log(arr1);
+
 
 75. // JavaScript Program to Merge Two Arrays and Remove Duplicate Items
+// const arr = [1,4,3 ,1, 3, 4, 3, 4,5, 0];
+// const arr2 = [1,5,6,7,8,9, ...arr];
+// let len = arr2.length;
+// let flag=0;
+// const arr1 = [];
+// for(let i = 0; i < len ; i++){
+//     for(let j = 0; j < arr1.length; j++){
+//         if(arr1[j] == arr2[i]){
+//             flag = 1;
+//             break;
+//         }
+//     }
+//     if(flag == 0){
+//         arr1.push(arr2[i]);
+//     }
+//     flag = 0;
+// }
+// console.log(arr2);
+// console.log(arr1);
 
 76. // JavaScript Program to Sort Array of Objects by Property Values
 
 77. // JavaScript Program to Create Two Dimensional Array
+// const arr = [[1, 2, 3], [1, 2, 3], [1, 2, 3]];
+// console.log(arr);
 
 78. // JavaScript Program to Extract Given Property Values from Objects as Array
+// const arr = [{a: 1, b: 2}, {a: 3, b: 4}, {a: 5, b: 6}];
+// let len = arr.length;
+// const arr1 = [];
+// for(let i = 0; i < len; i++) {
+//     arr1.push(arr[i]['a']);
+// }
+// console.log(arr1);
+
+// const arr = [{a: 1, b: 2}, {a: 3, b: 4}, {a: 5, b: 6}];
+// let len = arr.length;
+// const arr1 = [];
+// arr.forEach((key) => {
+//     console.log(key["a"])
+// });
  
 79. // JavaScript Program to Compare Elements of Two Arrays
 
